@@ -1,25 +1,41 @@
-const add = function() {
+const add = function(a,b) {
+	return a+b
+};
+
+const subtract = function(a,b) {
+	return a-b
+};
+
+const sum = function(arr) {
+ 
+  let result = arr.reduce((sum,current)=> sum+current,0);
+  return result 
 	
 };
 
-const subtract = function() {
-	
+const multiply = function(arr) {
+ let result = arr.reduce((sum,current)=>sum*current,1);
+ return result;
 };
 
-const sum = function() {
-	
+const power = function(a,b) {
+	return a**b
 };
 
-const multiply = function() {
-
-};
-
-const power = function() {
-	
-};
-
-const factorial = function() {
-	
+const factorial = function(a) {
+  let answer=1;
+  if (a===1||a===0){
+    return answer;
+  }
+  else if(a>1){
+    for (let i=a ;i>=1 ; i--){
+      answer=answer*i;
+    }
+    return answer;
+  }
+	else {
+    return "the number should be positive"
+  }
 };
 
 // Do not edit below this line
